@@ -24,8 +24,8 @@ def print_board(board):
     for row in board:
         print_row(row)
 
-    print("-----------------------")
-    print(" 1  2  3  4  5  6  7   ")
+    print("---------------------")
+    print(" 1  2  3  4  5  6  7  ")
 
 
     ############################################
@@ -47,7 +47,7 @@ def n_in_a_row(board, row, col, dir=(0,1), n=4):
 
     end_loc = (row+(n*dir[0]), col+(n*dir[1]))
 
-    if end_loc[0] > 5 or end_loc[0] < 0 or end_loc[1] > 6 or end_loc[1] < 0:
+    if end_loc[0] > 6 or end_loc[0] < 0 or end_loc[1] > 6 or end_loc[1] < 0:
         return False
 
     if n <= 1:
